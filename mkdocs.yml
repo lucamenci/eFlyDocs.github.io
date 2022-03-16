@@ -1,0 +1,11 @@
+
+site_name: CaptoDocs
+site_url: https://lucamenci.github.io/
+nav:
+    - Home: index.md
+    - Introduction: general.md
+    - Fundamentals: fundamentals.md
+    - Quick Start: setup.md
+    - Use of the system: use.md
+    - About: about.md
+theme: readthedocs
