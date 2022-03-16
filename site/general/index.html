@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="canonical" href="https://lucamenci.github.io/general/">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Introduction - CaptoDocs-pkg</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Introduction";
+    var mkdocs_page_input_path = "general.md";
+    var mkdocs_page_url = "/general/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> CaptoDocs-pkg</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Introduction</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#sensor-module">Sensor Module</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#software">Software</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../fundamentals/">Fundamentals</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../setup/">Quick Start</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../use/">Use of the system</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">CaptoDocs-pkg</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Introduction</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="introduction">Introduction</h1>
+<p><img alt="" src="../img/putting.jpeg" /></p>
+<h2 id="overview">Overview</h2>
+<p>Capto is a compact IMU platform specifically created for golf putting dynamic data acquisition and analysis.
+It combines on-board sensors and data processing algorithms with WiFi interfaces to
+create a versatile platform well suited to both real-time and data-logging applications.
+The system is equipped with a powerful internal processor that processes the data and transfers it in real time to the analysis application.
+The sensor is installed directly on the shaft of the putter and measures its angles, speeds, accelerations and trajectories with an internal frame rate of 600 Hz and output. 
+The processed data is transferred to the device in real time at low frame rate (50 Hz) where some of they are numerically displayed in "Green" mode.
+The processor inside the Capto module autonomously processes the parameters acquired by the sensor, filters them, identifies the shot and transfers it to the device via Wi-Fi. 
+The sequence of all the frames is transferred, from the takeaway to the 300 Hz resampled finish. 
+Doing so guarantees a very high graphic sampling with acceptable data transfer times from the module to the device.</p>
+<h2 id="sensor-module">Sensor Module</h2>
+<p><img src="/img/eFly_transparent.png" width="200" /></p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gyroscope Range</td>
+<td>2000 deg/s</td>
+</tr>
+<tr>
+<td>Gyroscope Rate</td>
+<td>600 Hz</td>
+</tr>
+<tr>
+<td>Gyroscope Resolution</td>
+<td>16 bit</td>
+</tr>
+<tr>
+<td>Accelerometer Range</td>
+<td>16 g</td>
+</tr>
+<tr>
+<td>Accelerometer Rate</td>
+<td>600 Hz</td>
+</tr>
+<tr>
+<td>Accelerometer Resolution</td>
+<td>16 bit</td>
+</tr>
+<tr>
+<td>Magnetometer Range</td>
+<td>9000 uT</td>
+</tr>
+<tr>
+<td>Magnetometer Rate</td>
+<td>600 Hz</td>
+</tr>
+<tr>
+<td>Magnetometer Resolution</td>
+<td>16 bit</td>
+</tr>
+<tr>
+<td>AHRS Algorithm Rate</td>
+<td>270 Hz</td>
+</tr>
+<tr>
+<td>Static Angle Accuracy</td>
+<td>&lt;1 deg RMS</td>
+</tr>
+<tr>
+<td>Wireless</td>
+<td>Wi-Fi</td>
+</tr>
+<tr>
+<td>External Power Supply</td>
+<td>4.5-6 V</td>
+</tr>
+<tr>
+<td>Charging</td>
+<td>USB-C</td>
+</tr>
+<tr>
+<td>Weight</td>
+<td>44 g</td>
+</tr>
+<tr>
+<td>Box</td>
+<td>Nylon PA12 Sintered</td>
+</tr>
+<tr>
+<td>Operating Temperature</td>
+<td>5-30 C</td>
+</tr>
+</tbody>
+</table>
+<p>On-board sensors include a triple-axis gyroscope, accelerometer, and magnetometer, as well a barometric pressure sensor and humidity sensor.<br />
+An on-board AHRS sensor fusion algorithm combines inertial and magnetic measurements to provide a drift-free measurement of orientation relative to the Earth.<br />
+Each device is individually calibrated using robotic equipment to achieve the specified accuracy.</p>
+<h2 id="software">Software</h2>
+<p><img src="/img/app_home.png" width="400" /></p>
+<p>The eFly app is available for iOS, Android, Windows and MacOS. For all of them the operating systems the interface remains unchanged. 
+The app interfaces with the sensor via Wi-Fi, acquires data and synchronizes them with the video acquired by the device.
+Capto allows you to save, consult and analyze data, both numerically and graphically with the help of synchronized video.</p>
+<p><strong>The Capto App is available in Apple Store (iOS, MacOS), Google Play Store (Android) and <a href="https://www.captogolf.com/download">captogolf</a> (Windows).</strong></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../fundamentals/" class="btn btn-neutral float-right" title="Fundamentals">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../fundamentals/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
